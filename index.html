@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Block Manipulation</title>
   </head>
-  <body>
+  <body class="su">
     <div class="menu">
       <div class="block">
         <h3 class="block-heading">Position Y</h3>
         <div class="wrapper vertical">
-          <input type="range" id="pos-y" min="0" max="600" value="0" />
-          <label for="pos-y"><span>0</span> <span>600</span></label>
+          <input type="range" id="pos-y" min="0" max="500" value="0" />
+          <label for="pos-y"><span>0</span> <span>500</span></label>
         </div>
       </div>
       <div class="block">
         <h3 class="block-heading">Position X</h3>
         <div class="wrapper horizontal">
           <label for="pos-x"><span>0</span> <span>800</span></label>
-          <input type="range" id="pos-x" min="0" max="600" value="0" />
+          <input type="range" id="pos-x" min="0" max="800" value="0" />
         </div>
       </div>
       <div class="block">
@@ -52,7 +52,7 @@
             <option value="2">Circle</option>
             <option value="3">Rhombus</option>
           </select>
-          <button>Ok</button>
+          <button id="but">Ok</button>
         </div>
       </div>
       <div class="block">
@@ -86,7 +86,9 @@
         </div>
       </div>
     </div>
-    <div class="wrapper result"></div>
+    <div class="container">
+      <div id="block"></div>
+    </div>
     <script src="js/my.js"></script>
   </body>
 </html>
