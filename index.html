@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/my.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Manipulation</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="block">
+        <h3 class="block-heading">Position Y</h3>
+        <div class="wrapper">
+          <input type="range" id="pos-y" min="0" max="600" value="0" />
+          <label for="pos-y"><span>0</span> <span>600</span></label>
+        </div>
+      </div>
+      <div class="block">
+        <h3 class="block-heading">Position X</h3>
+        <div class="wrapper">
+          <input type="range" id="pos-x" min="0" max="600" value="0" />
+          <label for="pos-x"><span>0</span> <span>800</span></label>
+        </div>
+      </div>
+      <div class="block">
+        <h3 class="block-heading">Size</h3>
+        <div class="wrapper">
+          <input type="range" id="Size" min="0" max="2" step="0.1" value="1" />
+          <label for="pos-y"><span>0</span> <span>2</span></label>
+        </div>
+      </div>
+      <div class="block">
+        <h3 class="block-heading">Opacity</h3>
+        <div class="wrapper">
+          <input
+            type="range"
+            id="Opacity"
+            min="0"
+            max="1"
+            step="0.01"
+            value="1"
+          />
+          <label for="Opacity"><span>0</span> <span>1</span></label>
+        </div>
+      </div>
+      <div class="block">
+        <h3 class="block-heading">Shape Type</h3>
+        <div class="wrapper">
+          <select id="shape-selector">
+            <option value="1">Square</option>
+            <option value="2">Circle</option>
+            <option value="3">Rhombus</option>
+          </select>
+          <button>Ok</button>
+        </div>
+      </div>
+      <div class="block">
+        <h3 class="block-heading">HEX</h3>
+        <div class="wrapper">
+          <label for="HEX">#</label>
+          <input type="text" id="HEX" />
+        </div>
+      </div>
+      <div class="block">
+        <h3 class="block-heading">RGBA</h3>
+        <div class="wrapper">
+          <input type="range" min="0" max="255" value="255" id="rgba-r" /><label
+            >r</label
+          >
+          <input type="range" min="0" max="255" value="0" id="rgba-g" /><label
+            >g</label
+          >
+
+          <input type="range" min="0" max="255" value="0" id="rgba-b" /><label
+            >b</label
+          >
+          <input
+            type="range"
+            min="0"
+            max="1"
+            value="1"
+            id="rgba-a"
+            step="0.01"
+          /><label>a</label>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper"></div>
+    <script src="js/my.js"></script>
+  </body>
+</html>
