@@ -61,13 +61,13 @@ window.addEventListener("load", function () {
   //     console.log("hello");
   //   });
 
-  let HEXx = document.getElementById("HEX");
-  HEXx.addEventListener("keyup", function (event) {
-    console.log("hi");
-    if (event.key == "Enter") {
-      block.style.background = `#${HEXx.value}`;
-    }
-  });
+  //   let HEXx = document.getElementById("HEX");
+  //   HEXx.addEventListener("keyup", function (event) {
+  //     console.log("hi");
+  //     if (event.key == "Enter") {
+  //       block.style.background = `#${HEXx.value}`;
+  //     }
+  //   });
   // last part god
   let r = document.getElementById("rgba-r");
   let g = document.getElementById("rgba-g");
